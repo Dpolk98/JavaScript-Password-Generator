@@ -27,6 +27,27 @@
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="slidecontainer">
+              <input type="range" min="8" max="128" value="72" class="slider" id="length">
+            </div>
+            <p id="slideValue"></p>
+            <div class="checkbox">
+              <input type="checkbox" id="specChars">
+              <label for="specChars">Include special characters?</label>
+              <input type="checkbox" id="numerics">
+              <label for="numerics">Include numerical characters?</label>
+              <input type="checkbox" id="upperCase">
+              <label for="upperCase">Include uppercase characters?</label>
+              <input type="checkbox" id="lowerCase">
+              <label for="lowerCase">Include lowercase characters?</label>
+            </div>
+            <button id="submit">Submit</button>
+          </div>
+        </div>
+        
       </div>
     </div>
     <script src="script.js"></script>
