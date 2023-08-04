@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -18,7 +19,7 @@
         </div>
         <div class="card-body">
           <textarea
-            readonly
+          readonly
             id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
@@ -29,18 +30,21 @@
         </div>
         <div id="myModal" class="modal">
           <div class="modal-content">
-            <span class="close">&times;</span>
+            <span class="close" id="close">&times;</span>
             <div class="slidecontainer">
-              <input type="range" min="8" max="128" value="72" class="slider" id="length">
+              <input type="range" min="8" max="128" class="slider" id="length">
             </div>
             <p id="slideValue"></p>
             <div class="checkbox">
               <input type="checkbox" id="specChars">
               <label for="specChars">Include special characters?</label>
+
               <input type="checkbox" id="numerics">
               <label for="numerics">Include numerical characters?</label>
+
               <input type="checkbox" id="upperCase">
               <label for="upperCase">Include uppercase characters?</label>
+
               <input type="checkbox" id="lowerCase">
               <label for="lowerCase">Include lowercase characters?</label>
             </div>
@@ -50,6 +54,6 @@
         
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="Assets/script.js"></script>
   </body>
 </html>
